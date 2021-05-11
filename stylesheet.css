@@ -1,14 +1,28 @@
+@keyframes change{
+    from {margin-top: 0px;}
+    to {margin-top: 150px;}
+
+    from {background-color: #eff0b6;}
+    to {background-color: #bfb051;}
+}
+    
+
 body {
- background-color: #bfb051;
+ /* background-color: #bfb051; */
  border: #763857 solid 3px;
+ background: linear-gradient(145deg, #fdcd3b 60%, #ffed4b 40%);
  border-radius: 8px;
  width: 270px;
  height: 320px;
  margin: auto;
- margin-top: 165px;
- box-shadow: inset 0 0 12px 6px rgba(0,0,0,0.75);
-
+ margin-top: 130px;
+ box-shadow: inset 0 0 15px 6px rgba(0, 0, 0, 0.75);
+ animation-name: change;
+ animation-duration: 1.5s;
+ animation-iteration-count: 1;
+ animation-direction: normal;
 }
+
 
 /* login title stylwe */
 #title {
@@ -16,14 +30,10 @@ body {
     font-family: Georgia, serif;
     text-align: center;
     text-shadow: purple 1px 1px;
+    text-shadow: 0 0 3px  #bfb051;
 }
 
-/* enter your details style */
-/* #task {
-    color: white;
-    font-family: 'Times New Roman', serif;
-    padding-left: 50px;
-} */
+
 
 /* username style */
 .userinput {
