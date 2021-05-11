@@ -1,0 +1,81 @@
+body {
+ background-color: #bfb051;
+ border: #763857 solid 3px;
+ border-radius: 8px;
+ width: 270px;
+ height: 320px;
+ margin: auto;
+ margin-top: 165px;
+ box-shadow: inset 0 0 15px 6px rgba(0,0,0,0.75);
+
+}
+
+/* login title stylwe */
+#title {
+    color: #8f4068;
+    font-family: Bradley Hand, cursive;
+    text-align: center;
+    text-shadow: purple 1px 1px;
+}
+
+/* enter your details style */
+/* #task {
+    color: white;
+    font-family: 'Times New Roman', serif;
+    padding-left: 50px;
+} */
+
+/* username style */
+.userinput {
+    color: #8f4068;
+    /* text-shadow: #763857 0.5px 0.5px; */
+    padding-left: 45px;
+    font-family: Apple Chancery, cursive;
+}
+
+/* input box movement */
+#username {
+    color: #eff0b6;
+    background-color: #763857;
+    padding-left: 15px;
+    margin-left: 45px;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#password {
+    color: #eff0b6;
+    background-color: #763857;
+    padding-left: 15px;
+    border-radius: 5px;
+    margin-left: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* final submission */
+#input-submit {
+
+    color: #763857;
+    background-color: #eff0b6;
+    border-radius: 5px;
+    margin-left: 65px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: purple 2px 2px;
+
+}
+#input-reset {
+
+    color: #763857;
+    background-color: #eff0b6;
+    border-radius: 5px;
+    margin-left: 65px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: purple 2px 2px;
+}
+
+::placeholder {
+    color: #eff0b6;
+  }
