@@ -5,12 +5,13 @@
     from {background-color: #eff0b6;}
     to {background-color: #bfb051;}
 }
+
     
 
 body {
  /* background-color: #bfb051; */
  border: #763857 solid 3px;
- background: linear-gradient(145deg, #fdcd3b 60%, #ffed4b 40%);
+ background: linear-gradient(to left, #ecc929, #8f4068);
  border-radius: 8px;
  width: 270px;
  height: 320px;
@@ -26,7 +27,7 @@ body {
 
 /* login title stylwe */
 #title {
-    color: #8f4068;
+    color: #721946;
     font-family: Georgia, serif;
     text-align: center;
     text-shadow: purple 1px 1px;
