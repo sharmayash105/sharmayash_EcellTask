@@ -1,8 +1,4 @@
 
-*{
-    margin: 0;
-    padding: 0;
-}
     @keyframes change{
     from {margin-top: 0px;}
     to {margin-top: 130px;}
