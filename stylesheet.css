@@ -1,36 +1,46 @@
-@keyframes change{
-    from {margin-top: 0px;}
-    to {margin-top: 150px;}
-
-    from {background-color: #eff0b6;}
-    to {background-color: #bfb051;}
+*{
+    margin: 0;
+    padding: 0;
 }
-
-    
+    @keyframes change{
+    from {margin-top: 0px;}
+    to {margin-top: 130px;}
+} 
 
 body {
- /* background-color: #bfb051; */
- border: #763857 solid 3px;
- background: linear-gradient(to left, #ecc929, #8f4068);
- border-radius: 8px;
- width: 270px;
- height: 320px;
- margin: auto;
- margin-top: 130px;
- box-shadow: inset 0 0 15px 6px rgba(0, 0, 0, 0.75);
- animation-name: change;
- animation-duration: 1.5s;
- animation-iteration-count: 1;
- animation-direction: normal;
+ background-image: url(https://images.all-free-download.com/images/graphicthumb/rippled_wall_background_01_hd_pictures_169887.jpg);
+   display: flex;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+   box-sizing: border-box;
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    
+}
+.mydiv{
+    border: #310d85 solid 3px; 
+    border-radius: 8px; 
+    width: 270px; 
+    height: 320px;
+   box-shadow: inset 0 0 15px 6px rgba(0, 0, 0, 0.75); 
+   margin: auto;
+   margin-top: 130px;
+   animation-name: change;
+   animation-duration: 1.3s;
+   animation-iteration-count: 1;
+   animation-direction: normal; 
 }
 
 
-/* login title stylwe */
+/* login title style */
 #title {
-    color: #721946;
+    color: #40bedd;
+    margin-top: 15px;
     font-family: Georgia, serif;
     text-align: center;
-    text-shadow: purple 1px 1px;
+    text-shadow: rgb(62, 8, 124) 1.5px 1.5px;
     text-shadow: 0 0 3px  #bfb051;
 }
 
@@ -38,17 +48,17 @@ body {
 
 /* username style */
 .userinput {
-    color: #8f4068;
-    /* text-shadow: #763857 0.5px 0.5px; */
+    color: #261183;
+    margin-top: 40px;
     padding-left: 45px;
     font-family: 'Franklin Gothic Medium', sans-serif;
 }
 
 /* input box movement */
 #username {
-    color: #eff0b6;
-    background-color: #763857;
-    padding-left: 15px;
+    color: #59e22f;
+    background-color: #379bdd;
+    padding : 10px;
     margin-left: 45px;
     border-radius: 5px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -56,12 +66,13 @@ body {
 }
 
 #password {
-    color: #eff0b6;
-    background-color: #763857;
-    padding-left: 15px;
+    color: #59e22f;
+    background-color: #379bdd;
+    padding : 10px;
     border-radius: 5px;
     margin-left: 45px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
 }
 
 /* final submission */
@@ -73,9 +84,10 @@ body {
     margin-left: 65px;
     padding-left: 50px;
     padding-right: 50px;
-    box-shadow: purple 2px 2px;
+    box-shadow: rgb(19, 5, 139) 2px 2px;
+    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    font-style: italic;
 }
 #input-reset {
 
@@ -85,8 +97,9 @@ body {
     margin-left: 65px;
     padding-left: 50px;
     padding-right: 50px;
-    box-shadow: purple 2px 2px;
+    box-shadow: rgb(19, 5, 139) 2px 2px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
 }
 
 ::placeholder {
