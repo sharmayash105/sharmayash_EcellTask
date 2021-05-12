@@ -6,11 +6,8 @@
 
 body {
  background-image: url(https://images.all-free-download.com/images/graphicthumb/rippled_wall_background_01_hd_pictures_169887.jpg);
-   display: flex;
+   
    width: 100%;
-   align-items: center;
-   justify-content: center;
-   box-sizing: border-box;
      background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
