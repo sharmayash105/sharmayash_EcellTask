@@ -1,47 +1,63 @@
-
-    @keyframes change{
-    from {margin-top: 0px;}
-    to {margin-top: 130px;}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 100vh;
+    background: 
+  linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+  linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+  linear-gradient(315deg, black 25%, transparent 25%),
+  linear-gradient(45deg, black 25%, transparent 25%);	
+  background-size: 2em 2em;
+  background-color: #232323;
+    overflow: hidden;
+}
+@keyframes change{
+    from {margin-top: -500px;}
+    to {margin-top: 500px;}
 } 
 
-body {
- background-image: url(https://images.all-free-download.com/images/graphicthumb/rippled_wall_background_01_hd_pictures_169887.jpg);
-   
-   width: 100%;
-     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; 
-    border: #310d85 solid 3px; 
+.mydiv{
+    position: absolute;
+    border: #ebebeb solid 3px; 
+    box-sizing: border-box;
+    justify-content: center;
     border-radius: 8px; 
-    width: 270px; 
+    width: 300px; 
     height: 320px;
-   box-shadow: inset 0 0 15px 6px rgba(0, 0, 0, 0.75); 
-   margin: auto;
-   margin-top: 130px;
+   box-shadow: inset 0 0 15px 16px rgba(0, 0, 0, 0.75); 
+   margin: auto; 
+  
+    margin-top: 500px;
    animation-name: change;
    animation-duration: 1.3s;
    animation-iteration-count: 1;
    animation-direction: normal; 
-    
 }
-
 
 
 /* login title style */
 #title {
-    color: #40bedd;
+    color: #f3f3f3;
     margin-top: 15px;
     font-family: Georgia, serif;
     text-align: center;
-    text-shadow: rgb(62, 8, 124) 1.5px 1.5px;
-    text-shadow: 0 0 3px  #bfb051;
+    text-shadow: rgb(64, 61, 68) 1.5px 1.5px;
+    text-shadow: 0 0 3px  #0c0c0b;
 }
 
 
 
 /* username style */
 .userinput {
-    color: #261183;
+    color: #f5f2ff;
+    text-shadow: rgb(255, 255, 255) 0.8px 0.8px;
     margin-top: 40px;
     padding-left: 45px;
     font-family: 'Franklin Gothic Medium', sans-serif;
@@ -49,8 +65,8 @@ body {
 
 /* input box movement */
 #username {
-    color: #59e22f;
-    background-color: #379bdd;
+    color: #ffffff;
+    background-color: #000000;
     padding : 10px;
     margin-left: 45px;
     border-radius: 5px;
@@ -59,8 +75,8 @@ body {
 }
 
 #password {
-    color: #59e22f;
-    background-color: #379bdd;
+    color: #ffffff;
+    background-color: #000000;
     padding : 10px;
     border-radius: 5px;
     margin-left: 45px;
@@ -71,30 +87,113 @@ body {
 /* final submission */
 #input-submit {
 
-    color: #763857;
-    background-color: #eff0b6;
+    color: #000000;
+    background-color: #ffffff;
     border-radius: 5px;
     margin-left: 65px;
     padding-left: 50px;
     padding-right: 50px;
-    box-shadow: rgb(19, 5, 139) 2px 2px;
-    
+    box-shadow: rgb(124, 123, 126) 2px 2px;
+    cursor: pointer;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
 }
 #input-reset {
 
-    color: #763857;
-    background-color: #eff0b6;
+    color: #000000;
+    background-color: #ffffff;
     border-radius: 5px;
     margin-left: 65px;
     padding-left: 50px;
     padding-right: 50px;
-    box-shadow: rgb(19, 5, 139) 2px 2px;
+    box-shadow: rgb(124, 123, 126) 2px 2px;
+    cursor: pointer;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
 }
 
 ::placeholder {
-    color: #eff0b6;
+    color: #9b8787;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: rgb(255, 255, 255) 0.8px 0.8px;
   }
+
+  /* background animation */
+.box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.box li{
+    bottom: -50px;
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 500px;
+    height: 150px;
+    background: rgba(203, 195, 221, 0.2);
+    animation: animate 13s alternate infinite;
+}
+
+.box #one{
+  left: 86%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 1s;
+}
+.box #two{
+left: 12%;
+width: 15px;
+height: 15px;
+animation-delay: 1.5s;
+animation-duration: 10s;
+}  
+
+.box #three{
+left: 70%;
+width: 50px;
+height: 50px;
+animation-delay: 2s;
+}
+
+.box #four{
+left: 96%;
+width: 35px;
+height: 35px;
+animation-delay: 2.5s;
+}
+.box #five{
+left: 15%;
+width: 75px;
+height: 75px;
+animation-delay: 3.1s;
+}
+.box #six{
+left: 44%;
+width: 15px;
+height: 15px;
+animation-delay: 3.5s;
+}
+.box #seven{
+  left: 34%;
+  width: 65px;
+  height: 65px;
+  animation-delay: 1s;
+}
+
+
+@keyframes animate{
+  0%{
+      transform: translateY(0px) rotate(0deg);
+      opacity: 5;
+  }
+  100%{
+      transform: translateY(-800px) rotate(360deg);
+      opacity: 5;
+  }
+
+}
